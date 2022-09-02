@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Form Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link rel="stylesheet"     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+  <header class="header"> 
+    <h1 id="title" class="text-center"> The Happygeoscientist Survey Form</h1>
+    <p id="description" class="description-text-center"> ¿Tienes alguna duda o pregunta ? Dejame saber tu opinión</p>
+  </header>
+  <div id="main">
+    <div id="leftbox"> 
+      <h2> Contáctame</h2>
+        <div class="info-group" "text-center">
+          <i class="fa fa-phone" aria-hidden="true">
+          </i><a> 4431072606</a>
+          <br/>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a> rosalauracs@gmail.com</a><br/>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <a> Morelia, Michoacan, México</a> 
+          <br/> 
+          <br/>
+      </div>     
+      <div class="text-center">
+        <i class="fa fa-instagram" aria-hidden="true"></i> 
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-youtube" aria-hidden="true"></i>
+      </div>
+    </div> 
+  
+    <form id="survey-form" method="post" enctype="text/plain">
+      <fieldset>
+        <label id="name-label" for="name">
+            Nombre: 
+            <input type="text" name="name" id="name" 
+               class="form-control"
+               placeholder="Introduce tu nombre"
+               required
+            /> 
+        </label>
+        <label id="last-name-label" for="last-name"> 
+            Apellido: <input type="text"
+               name="last-name" 
+               id="last-name" 
+               class="form-control"     placeholder="Introduce tu apellido" 
+               required
+         />
+        </label>
+        <label id="email-label" for="email"> 
+            Correo electronico: 
+            <input name="email "id="email" type="email" class="form-control" placeholder=" Introduce tu correo electronico" required> 
+        </label>
+      </fieldset>
+      <fieldset>
+        <h2> Información adicional</h2>
+        <label id="number-label" for="number"> Edad: <input name="age" id="number" type="number" min="10" max="99" class="form-control" placeholder="Tu edad"> </label>   
+        <label id="phone-number-label" for="phone-number"> Telefono: <input id="my-number" type="text" class="form-control" placeholder="Introduce tu número de telefono"> </label>   
+       </fieldset> 
+    
+      <fieldset>
+        <p>¿Qué opcion describe mejor el area para la que necesitas este producto?</p>
+        <select id="dropdown" 
+                name="use" 
+                class="form-control" 
+                required>
+                <option disabled selected value>
+          Selecciona un area
+                </option>
+                <option value="commercial">Comercio</option>
+                <option value="educative">Educativo</option>
+                <option value="personal">Portafolio personal</option>
+                <option value="bussiness">Empresarial</option>
+                <option value="industry">Industrial</option>
+                <option value="other">Otro</option>
+        </select>
+        <p>¿En qué puedo ayudarte?</p>
+        <label>
+         <input name="user-wanted"
+                value="logo"
+                id="brand-logo" 
+                type="checkbox" 
+                for="brand-logo" 
+         /> Diseño de logos
+        </label> <br>
+        <label>
+          <input name="user-wanted"
+                 value="web"
+                 id="web-design" 
+                 type="checkbox"
+          /> Diseño Web
+        </label> <br>
+        <label>
+          <input name="user-wanted"
+                 value="webdev"
+                 id="web" 
+                 type="checkbox" 
+                 name="web"> Desarrollo Web</label><br>
+        <label>
+          <input name="user-wanted"
+                 value="movil" 
+                 id="movil" 
+                 type="checkbox" 
+                 name="movil"> Desarrollo applicacion móvil</label><br>
+        <label>
+          <input name="user-wanted"
+                 value="desktopdev" 
+                 id="desktopdev" 
+                 type="checkbox" 
+                 name="desktopdev"/> Desarrollo de aplicación de escritorio</label><br>
+        <label>
+          <input name="user-wanted"
+                 value="database"
+                 id="database" 
+                 type="checkbox" 
+                 name="database"> Bases de datos
+        </label><br>
+
+      <p>¿Recomendarias nuestro servicio a un amigo?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitivamente</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Tal vez</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />No estoy seguro</label
+      >
+      <p>Cuentame tu idea y/o dame tus comentarios</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Introduce tu comentario aquí..." 
+        rows="10" cols="60"
+      ></textarea>
+      
+      <button type="submit" id="submit" class="submit-button">
+        Enviar mensaje
+      </button>
+    </fielset>
+  </form>
+ </div>
+</div>
+  </body>
